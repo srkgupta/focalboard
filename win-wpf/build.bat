@@ -8,4 +8,4 @@ IF %ERRORLEVEL% NEQ 0 echo msbuild.exe not found; exit /b 1
 
 echo Building...
 
-msbuild.exe Focalboard.sln /t:Rebuild /p:Configuration=Release  /p:Platform="x64" /p:DebugSymbols=false /p:DebugType=None
+msbuild.exe Focalboard.sln /t:Rebuild /p:Configuration=Release  /p:Platform="x64" /p:DebugSymbols=false /p:DebugType=None /p:UseSharedCompilation
